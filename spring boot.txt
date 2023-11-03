@@ -1,0 +1,67 @@
+What is Spring Boot?
+
+spring boot is an approach to develope spring based applications with less configurations.
+spring boot makes it easy to create applications that u can just run
+POM Starters
+Auto configuration
+Embeded server
+
+Building First Application with SpringBoot
+
+Pre-requisites?
+
+To Create a new Spring Boot Application we will use the foolowing in our example
+1. Java 1.8+
+2. Spring STS
+3. Maven
+
+creating spring boot app online :
+https://start.spring.io/
+
+
+Internals of @SpringBootApplication
+1. @Configuration
+2. @EnableAutoConfiguration
+3. @ComponentScan
+
+@Configuration : this annotation helps in spring annotation based configuration.
+it indicates that aclass declares one or more @Bean methods and may be processed by the spring container to generate bean defination
+and service request for those beans at runtime.
+
+@EnableAutoConfiguration : it tells spring boot to guess how you want to configure spring based on the jar dependancies that you have added.
+auto-configure the beans that are present in the classpath. this simplify the developer work by guessing the required beans from 
+classpath and configure to run the application.
+
+eg: if H2 is on your classpath and you have not manually configured any database connection beans then spring will auto configure
+an in memory database.
+
+@ComponentScan : it itells spring to look for other components , configurations, and service in the specified package.
+is able to auto scan detect and register your beans or components from pre-defined project package.
+if no package is specified current class package is taken as the root package.
+
+
+What is Rest API?
+
+RESTful API act as an interface between two application to exchange informaion securely over the internet.
+Most business application have to communicate with other internal and third party application to perform various tasks.
+
+client send request--->Json--->get,post,put,delete--->HTTP--->server send response.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
